@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import-normalize;
+@import './reset.css';
+
+body {
+  background-color: var(--color-black);
+  font-family: var(--font-dm-sans);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+  max-width: 80vw;
+  height: 100vh;
+  margin: 0 56px 0 320px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root{
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --bg-icon: #131313;
+
+  --bg-arrow-color: rgba(0, 0, 0, 0.7);
+
+  --bg-cards: #121212;
+
+  --color-gray: #b3b3b3;
+
+  --color-black: #000;
+
+  --color-white: #fff;
+
+  --grid-gap: 24px;
+
+  --column-count: 5;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1274px) {
+}
+
+@media screen and (max-width: 1015px) {
+  .header__search {
+      /* display: none !important; */
+      width: auto !important;
+      display: none;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1016px) and (max-width: 1140px) {
+  .header__search {
+      /* display: none !important; */
+      width: auto !important;
+      display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* .offer__list-item {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  } */
+}
+@media screen and (max-width: 375px) {
+  .playlist {
+      display: none;
   }
+
+  .playlist-container {
+      width: 100%;
+      /* Ocupa toda a largura disponível */
+      height: auto;
+      /* Altura automática, ajusta conforme o conteúdo */
+  }
+
+  .sidebar {
+      width: 342px;
+  }
+
+  .offer__list-item {
+      grid-template-columns: 1fr;
+  }
+
+  .offer__scroll-container {
+      overflow-y: visible;
+  }
+
 }

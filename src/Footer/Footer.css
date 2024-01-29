@@ -1,0 +1,38 @@
+.premium {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.premium__text {
+    flex-shrink: 0;
+}
+
+.premium__text p {
+    font-size: 12px;
+    color: var(--color-white);
+    margin: 0 0 10px 0;
+    font-weight: 400;
+}
+
+#subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button__premium button{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
